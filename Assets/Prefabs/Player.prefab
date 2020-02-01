@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 50426906732728352}
   - component: {fileID: 2881258861500828784}
   - component: {fileID: 493106545049051098}
+  - component: {fileID: 7805859955787935328}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -158,6 +159,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 3
   isEnemy: 0
+--- !u!114 &7805859955787935328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789351796881258290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7596d9c2721de41b4a5a41839e6d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 1, y: 1}
+  direction: {x: 1, y: 0}
+  isLinkedToCamera: 1
+  isLooping: 0
 --- !u!1001 &4595176207555650865
 PrefabInstance:
   m_ObjectHideFlags: 0
