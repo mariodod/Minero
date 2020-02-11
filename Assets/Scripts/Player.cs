@@ -48,6 +48,7 @@ public class Player : MonoBehaviour
                 if (weapon != null && weapon.CanAttack)
                 {
                     weapon.Attack(false);
+                    SoundEffectsHelper.Instance.MakePlayerShotSound();
                 }
             }
         }
@@ -82,4 +83,12 @@ public class Player : MonoBehaviour
         // 6 - Move the game object good practice
         rigidbodyComponent.velocity = movement;
     }
+
+    void OnDestroy()
+    {
+        // Game Over.
+        var gameOver = FindObjectOfType<GameOver>();
+        gameOver.ShowButtons();
+    }
+
 }

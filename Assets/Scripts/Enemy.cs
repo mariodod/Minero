@@ -40,6 +40,7 @@ public class Enemy : MonoBehaviour
         foreach (Weapon weapon in weapons)
         {
             weapon.enabled = false;
+            SoundEffectsHelper.Instance.MakeEnemyShotSound();
         }
     }
 

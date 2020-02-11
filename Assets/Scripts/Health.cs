@@ -28,6 +28,7 @@ public class Health : MonoBehaviour
         if (hp <= 0)
         {
             SpecialEffectsHelper.Instance.Explosion(transform.position);
+            SoundEffectsHelper.Instance.MakeExplosionSound();
             // Dead!
             Destroy(gameObject);
         }
