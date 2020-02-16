@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Menu.unity
+    guid: fe4773935b0480a41a7400c16385fee0
+  - enabled: 0
+    path: Assets/Scenes/Stage1.unity
+    guid: 077b19aa632104541914d8d3d158e5b9
+  - enabled: 1
+    path: Assets/Scenes/TouchControlTest.unity
+    guid: a457c17540c80bf4eb15b930b4fba1b5
   m_configObjects: {}
